@@ -1,0 +1,36 @@
+// COLORS
+$black: #333;
+$accent: #B59571;
+$white: #fff;
+
+// Actions
+$transition: .2s all ease-in-out;
+
+
+@mixin container {
+    max-width: 1327px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @media (max-width:1366px) {
+        padding-left: 120px;
+    }
+    @media (max-width:768px) {
+        padding-left: 15px;
+    }
+} 
+
+
+@mixin accentBtn {
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+    background-color: $accent;
+    border: 2px solid $accent;
+    color: $white;
+    transition: $transition;
+    &:hover {
+        background-color: transparent;
+        color: $accent;
+    }
+}
