@@ -34,3 +34,21 @@ $transition: .2s all ease-in-out;
         color: $accent;
     }
 }
+
+@mixin containerSection {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 886px;
+}
+
+@mixin usualText {
+    font-size: 18px;
+    color: $black;
+    line-height: 140%;
+}
+
+@mixin bigTitle {
+    font-size: 64px;
+    color: $black;
+    line-height: 120%;
+}
